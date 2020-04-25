@@ -2,6 +2,7 @@ require "base64"
 require "json"
 require "uri"
 require "openssl"
+require "file_utils"
 
 # @Author: Mohamed Ben rebia
 # @Date: 2020-04-25 16:08:55
@@ -16,7 +17,7 @@ module Phpcr
     #
     #
     # ```
-    # php.array("")
+    # php.array("") # =>
     # ```
     #
     def array(*ele)
@@ -26,7 +27,7 @@ module Phpcr
     #
     #
     # ```
-    # php.array_key_exists(key, arr)
+    # php.array_key_exists(key, arr) # =>
     # ```
     #
     def array_key_exists(key, arr)
@@ -36,39 +37,40 @@ module Phpcr
     #
     #
     # ```
-    # php.base64_decode(str)
+    # php.base64_decode("VGhpcyBpcyBhbiBlbmNvZGVkIHN0cmluZw==") # =>
     # ```
     #
     def base64_decode(str)
-      return Base64.decode(str)
+      return Base64.decode_string(str)
     end
 
     #  Encodes data with MIME base64
     #
     #
     # ```
-    # php.base64_encode(str)
+    # php.base64_encode("This is an encoded string") # =>
     # ```
     #
     def base64_encode(str)
-      return Base64.encode(str)
+      return Base64.strict_encode(str)
     end
 
     # Returns trailing name component of path
     #
     #
     # ```
-    # php.basename(path)
+    # php.basename("/foo/bar/file.cr") # => # => "file.cr"
     # ```
     #
     def basename(path)
+      return Path[path].basename
     end
 
     # Call the callback given by the first parameter
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def call_user_func
@@ -78,7 +80,7 @@ module Phpcr
     #
     #
     # ```
-    # php.chdir(directory)
+    # php.chdir(directory) # =>
     # ```
     #
     def chdir(directory)
@@ -88,7 +90,7 @@ module Phpcr
     #
     #
     # ```
-    # php.mkdir("/to/mode", 755)
+    # php.mkdir("/to/mode", 755) # =>
     # ```
     #
     def mkdir(path, mode = 511)
@@ -99,17 +101,22 @@ module Phpcr
     #
     #
     # ```
-    # php.class_exists("some_class")
+    # php.class_exists("some_class") # => bool
     # ```
     #
     def class_exists(class_name)
+      if class_name.class == Class
+        return true
+      else
+        return false
+      end
     end
 
     #  Count all elements in an array, or something in an object
     #
     #
     # ```
-    # php.count(some_array)
+    # php.count(some_array) # =>
     # ```
     #
     def count(array)
@@ -120,7 +127,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def date(date_format, date_input = nil)
@@ -130,17 +137,18 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def die(die)
+      puts die
     end
 
     # Returns a parent directory's path
     # see https://crystal-lang.org/api/0.33.0/File.html#dirname(path):String-class-method
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def dirname(filename)
@@ -151,7 +159,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def echo(string)
@@ -162,7 +170,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def empty(obj)
@@ -172,17 +180,18 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def explode(expl, strexp)
+      return strexp.to_s.split(expl)
     end
 
     # Closes an open file pointer
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def fclose(handle)
@@ -193,7 +202,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def fgets(handle, length = 4096)
@@ -203,17 +212,22 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.file_exists("/path/to/foo.txt") # =>
     # ```
     #
     def file_exists(filename)
+      if File.exists?(filename) == true
+        return true
+      else
+        return false
+      end
     end
 
     # Reads entire file into a string
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def file_get_contents(filename)
@@ -223,17 +237,22 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.file_put_contents("people.txt", "John Smith\n") # =>
     # ```
     #
     def file_put_contents(filename, context)
+      File.open(filename, "w") do |file|
+        # file.write(context)
+      end
+
+      return true
     end
 
     # Opens file or URL
     #
     #
     # ```
-    # php.()
+    # php.fopen("c:\\folder\\resource.txt", "r")
     # ```
     #
     def fopen(filename, mode)
@@ -244,7 +263,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def fread(handle, encoding = nil)
@@ -255,7 +274,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def fwrite(filename, content)
@@ -265,7 +284,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def gettext(message)
@@ -275,7 +294,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def gzcompress(data, level = 3)
@@ -285,7 +304,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def gzuncompress(data, length = 0)
@@ -295,7 +314,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def header(header)
@@ -305,7 +324,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def html_entity_decode(string)
@@ -315,17 +334,18 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.htmlspecialchars("<a href='test'>Test</a>") # =>
     # ```
     #
     def htmlspecialchars(string)
+      return string.to_s.gsub(/&/, "&amp;").gsub(/\"/, "&quot;").gsub(/>/, "&gt;").gsub(/</, "&lt;")
     end
 
     # Generate URL-encoded query string
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def http_build_query(obj)
@@ -334,7 +354,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     #
@@ -346,7 +366,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def ip2long(ip_address)
@@ -356,7 +376,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def is_a(obj, classname)
@@ -366,27 +386,37 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
-    def is_dir(filepath)
+    def is_dir(dirpath)
+      if File.directory?(dirpath) == true
+        return true
+      else
+        return false
+      end
     end
 
     # Tells whether the filename is a regular file
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def is_file(filepath)
+      if File.file?(filepath) == true
+        return true
+      else
+        return false
+      end
     end
 
     # Finds whether a variable is a number or a numeric string
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def is_numeric(number)
@@ -396,7 +426,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def isset(var)
@@ -406,7 +436,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def json_decode(data, as_array = false)
@@ -416,7 +446,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def json_encode(obj)
@@ -426,7 +456,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def ksort(hash)
@@ -436,7 +466,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def long2ip(long)
@@ -446,7 +476,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def md5(string)
@@ -456,7 +486,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def method_exists(obj, method_name)
@@ -466,7 +496,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def microtime(get_as_float = false)
@@ -476,7 +506,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def mktime(hour = nil, min = nil, sec = nil, date = nil, month = nil, year = nil, is_dst = -1)
@@ -486,7 +516,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def move_uploaded_file(tmp_path, new_path)
@@ -496,7 +526,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.nl2br("foo isn't\n bar") # => foo isn't<br />  bar
     # ```
     #
     def nl2br(string)
@@ -506,7 +536,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.number_format(1234.56) # => 1,235
     # ```
     #
     def number_format(number, precision = 2, seperator = ".", delimiter = ",")
@@ -516,7 +546,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.("/etc/php5/")
     # ```
     #
     def opendir(dirpath)
@@ -526,7 +556,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def parse_str(str, hash)
@@ -536,7 +566,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def passthru(cmd)
@@ -546,7 +576,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.pathinfo("/www/htdocs/inc/lib.inc") # =>
     # ```
     #
     def pathinfo(filepath)
@@ -556,7 +586,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def print_r(argument, ret = false, count = 1)
@@ -566,7 +596,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def readdir(dir_handle)
@@ -576,7 +606,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def realpath(path)
@@ -585,7 +615,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     #
@@ -596,7 +626,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def serialize(argument)
@@ -606,7 +636,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def session_start
@@ -616,7 +646,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def setcookie(cname, cvalue, expire = nil, domain = nil)
@@ -626,7 +656,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def strip_tags(htmlstr)
@@ -636,7 +666,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def strpos(haystack, needle)
@@ -646,7 +676,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def strtolower(str)
@@ -657,7 +687,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.strtotime("now") # => 1587855648
     # ```
     #
     def strtotime(date_string, cur = nil)
@@ -667,7 +697,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.strtoupper("Mary Had A Little Lamb and She LOVED It So") # => Prints MARY HAD A LITTLE LAMB AND SHE LOVED IT SO
     # ```
     #
     def strtoupper(str)
@@ -678,7 +708,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def strtr(str, replace_pairs)
@@ -688,7 +718,8 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.substr("abcdef", -1) # => returns "f"
+    # php.substr("abcdef", -2) # => returns "ef"
     # ```
     #
     def substr(string, from, to = nil)
@@ -698,7 +729,7 @@ module Phpcr
     #
     #
     # ```
-    # php.time
+    # php.time  => 1587855792
     # ```
     #
     def time
@@ -708,7 +739,7 @@ module Phpcr
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def trim(argument)
@@ -719,7 +750,7 @@ module Phpcr
     #
     #
     # ```
-    # php.ucwords(string)
+    # php.ucwords("hello world!") # => "Hello World!"
     # ```
     #
     def ucwords(string)
@@ -729,17 +760,18 @@ module Phpcr
     #
     #
     # ```
-    # php.unlink(filepath)
+    # php.unlink("test.html")
     # ```
     #
     def unlink(filepath)
+      return FileUtils.rmdir(filepath)
     end
 
     # Creates a PHP value from a stored representation
     #
     #
     # ```
-    # php.()
+    # php.() # =>
     # ```
     #
     def unserialize(argument)
@@ -771,7 +803,7 @@ module Phpcr
     #
     #
     # ```
-    # php.utf8_decode(string)
+    # php.utf8_decode(string) # =>
     # ```
     #
     def utf8_decode(string)
@@ -781,7 +813,7 @@ module Phpcr
     #
     #
     # ```
-    # php.utf8_encode(string)
+    # php.utf8_encode(string) # =>
     # ```
     #
     def utf8_encode(string)
