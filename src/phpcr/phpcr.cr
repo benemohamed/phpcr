@@ -1,8 +1,9 @@
 require "base64"
 require "json"
 require "uri"
+require "openssl"
 
-# @Author: flydreame
+# @Author: Mohamed Ben rebia
 # @Date: 2020-04-25 16:08:55
 # @Desc: List
 
@@ -185,7 +186,7 @@ module Phpcr
     # ```
     #
     def fclose(handle)
-      handle.close
+      # return handle.close
     end
 
     #  Gets line from file pointer
@@ -247,7 +248,7 @@ module Phpcr
     # ```
     #
     def fread(handle, encoding = nil)
-      return fp.read(length)
+      # return fp.read(length)
     end
 
     #  Binary-safe file write
@@ -649,6 +650,7 @@ module Phpcr
     # ```
     #
     def strtolower(str)
+      return str.downcase
     end
 
     # Parse about any English textual datetime description into a Unix timestamp
@@ -669,6 +671,7 @@ module Phpcr
     # ```
     #
     def strtoupper(str)
+      return str.upcase
     end
 
     # Translate characters or replace substrings
