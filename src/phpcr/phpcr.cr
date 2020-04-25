@@ -3,6 +3,7 @@ require "json"
 require "uri"
 require "openssl"
 require "file_utils"
+require "digest/md5"
 
 # @Author: Mohamed Ben rebia
 # @Date: 2020-04-25 16:08:55
@@ -476,20 +477,22 @@ module Phpcr
     #
     #
     # ```
-    # php.() # =>
+    # php.md5("apple") # => 1f3870be274f6c49b3e31a0c6728957f
     # ```
     #
     def md5(string)
+      return Digest::MD5.hexdigest(string)
     end
 
     # Checks if the class method exists
     #
     #
     # ```
-    # php.() # =>
+    # php.method_exists("Directory", "read") # => false
     # ```
     #
     def method_exists(obj, method_name)
+      # return obj.respond_to?(method_name)
     end
 
     # Return current Unix timestamp with microseconds
@@ -539,7 +542,8 @@ module Phpcr
     # php.number_format(1234.56) # => 1,235
     # ```
     #
-    def number_format(number, precision = 2, seperator = ".", delimiter = ",")
+    def number_format(number, seperator = ".", delimiter = ",")
+      return number.format(seperator, delimiter)
     end
 
     # Open directory handle

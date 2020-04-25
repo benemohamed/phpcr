@@ -286,7 +286,7 @@ describe Phpcr do
 
   describe "number_format" do
     it "number_format Test" do
-      "".should eq(php.number_format(""))
+      "123,456.789".should eq(php.number_format(123_456.789))
     end
   end
 

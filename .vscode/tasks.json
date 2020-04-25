@@ -5,7 +5,7 @@
     "tasks": [{
             "label": "crystal run",
             "type": "shell",
-            "command": "crystal run src/urix.cr",
+            "command": "crystal run src/phpcr.cr",
             "group": {
                 "kind": "build",
                 "isDefault": true
