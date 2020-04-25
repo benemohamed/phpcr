@@ -1,0 +1,2500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.33.0">
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="github.com/benemohamed/phpcr">
+  <title>Phpcr::Php - github.com/benemohamed/phpcr</title>
+  <script type="text/javascript">
+    CrystalDoc.base_path = "../";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/benemohamed/phpcr/Phpcr" data-name="phpcr">
+      <a href="../Phpcr.html">Phpcr</a>
+      
+        <ul>
+  
+  <li class=" current" data-id="github.com/benemohamed/phpcr/Phpcr/Php" data-name="phpcr::php">
+      <a href="../Phpcr/Php.html">Php</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Phpcr::Php
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Phpcr/Php.html">Phpcr::Php</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L10" target="_blank">
+        phpcr/phpcr.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#array(*ele)-instance-method" class="signature"><strong>#array</strong>(*ele)</a>
+        
+          <div class="summary"><p>Create an array</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#array_key_exists(key,arr)-instance-method" class="signature"><strong>#array_key_exists</strong>(key, arr)</a>
+        
+          <div class="summary"><p>Checks if the given key or index exists in the array</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#base64_decode(str)-instance-method" class="signature"><strong>#base64_decode</strong>(str)</a>
+        
+          <div class="summary"><p>Decodes data encoded with MIME base64</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#base64_encode(str)-instance-method" class="signature"><strong>#base64_encode</strong>(str)</a>
+        
+          <div class="summary"><p>Encodes data with MIME base64</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#basename(path)-instance-method" class="signature"><strong>#basename</strong>(path)</a>
+        
+          <div class="summary"><p>Returns trailing name component of path</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#call_user_func-instance-method" class="signature"><strong>#call_user_func</strong></a>
+        
+          <div class="summary"><p>Call the callback given by the first parameter</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#chdir(directory)-instance-method" class="signature"><strong>#chdir</strong>(directory)</a>
+        
+          <div class="summary"><p>Change directory</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#class_exists(class_name)-instance-method" class="signature"><strong>#class_exists</strong>(class_name)</a>
+        
+          <div class="summary"><p>Checks if the class has been defined</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#count(array)-instance-method" class="signature"><strong>#count</strong>(array)</a>
+        
+          <div class="summary"><p>Count all elements in an array, or something in an object</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#date(date_format,date_input=nil)-instance-method" class="signature"><strong>#date</strong>(date_format, date_input = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Format a local time/date</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#die(die)-instance-method" class="signature"><strong>#die</strong>(die)</a>
+        
+          <div class="summary"><p>Equivalent to exit</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dirname(filename)-instance-method" class="signature"><strong>#dirname</strong>(filename)</a>
+        
+          <div class="summary"><p>Returns a parent directory's path see https://crystal-lang.org/api/0.33.0/File.html#dirname(path):String-class-method</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#echo(string)-instance-method" class="signature"><strong>#echo</strong>(string)</a>
+        
+          <div class="summary"><p>Output one or more strings</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#empty(obj)-instance-method" class="signature"><strong>#empty</strong>(obj)</a>
+        
+          <div class="summary"><p>Determine whether a variable is empty</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#explode(expl,strexp)-instance-method" class="signature"><strong>#explode</strong>(expl, strexp)</a>
+        
+          <div class="summary"><p>Split a string by a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fclose(handle)-instance-method" class="signature"><strong>#fclose</strong>(handle)</a>
+        
+          <div class="summary"><p>Closes an open file pointer</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fgets(handle,length=4096)-instance-method" class="signature"><strong>#fgets</strong>(handle, length = <span class="n">4096</span>)</a>
+        
+          <div class="summary"><p>Gets line from file pointer</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#file_exists(filename)-instance-method" class="signature"><strong>#file_exists</strong>(filename)</a>
+        
+          <div class="summary"><p>Checks whether a file or directory exists</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#file_get_contents(filename)-instance-method" class="signature"><strong>#file_get_contents</strong>(filename)</a>
+        
+          <div class="summary"><p>Reads entire file into a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#file_put_contents(filename,context)-instance-method" class="signature"><strong>#file_put_contents</strong>(filename, context)</a>
+        
+          <div class="summary"><p>Write data to a file</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fopen(filename,mode)-instance-method" class="signature"><strong>#fopen</strong>(filename, mode)</a>
+        
+          <div class="summary"><p>Opens file or URL</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fread(handle,encoding=nil)-instance-method" class="signature"><strong>#fread</strong>(handle, encoding = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Binary-safe file read</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#fwrite(filename,content)-instance-method" class="signature"><strong>#fwrite</strong>(filename, content)</a>
+        
+          <div class="summary"><p>Binary-safe file write</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gettext(message)-instance-method" class="signature"><strong>#gettext</strong>(message)</a>
+        
+          <div class="summary"><p>Lookup a message in the current domain</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gzcompress(data,level=3)-instance-method" class="signature"><strong>#gzcompress</strong>(data, level = <span class="n">3</span>)</a>
+        
+          <div class="summary"><p>Compress a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#gzuncompress(data,length=0)-instance-method" class="signature"><strong>#gzuncompress</strong>(data, length = <span class="n">0</span>)</a>
+        
+          <div class="summary"><p>Uncompress a compressed string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#header(header)-instance-method" class="signature"><strong>#header</strong>(header)</a>
+        
+          <div class="summary"><p>Send a raw HTTP header</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#html_entity_decode(string)-instance-method" class="signature"><strong>#html_entity_decode</strong>(string)</a>
+        
+          <div class="summary"><p>Convert HTML entities to their corresponding characters</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#htmlspecialchars(string)-instance-method" class="signature"><strong>#htmlspecialchars</strong>(string)</a>
+        
+          <div class="summary"><p>Convert special characters to HTML entities</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#http_build_query(obj)-instance-method" class="signature"><strong>#http_build_query</strong>(obj)</a>
+        
+          <div class="summary"><p>Generate URL-encoded query string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#include_once(filename)-instance-method" class="signature"><strong>#include_once</strong>(filename)</a>
+        
+          <div class="summary"></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ip2long(ip_address)-instance-method" class="signature"><strong>#ip2long</strong>(ip_address)</a>
+        
+          <div class="summary"><p>Converts a string containing an (IPv4) Internet Protocol dotted address into a long integer</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_a(obj,classname)-instance-method" class="signature"><strong>#is_a</strong>(obj, classname)</a>
+        
+          <div class="summary"><p>Checks if the object is of this class or has this class as one of its parents</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_dir(filepath)-instance-method" class="signature"><strong>#is_dir</strong>(filepath)</a>
+        
+          <div class="summary"><p>ells whether the filename is a directory</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_file(filepath)-instance-method" class="signature"><strong>#is_file</strong>(filepath)</a>
+        
+          <div class="summary"><p>Tells whether the filename is a regular file</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_numeric(number)-instance-method" class="signature"><strong>#is_numeric</strong>(number)</a>
+        
+          <div class="summary"><p>Finds whether a variable is a number or a numeric string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#isset(var)-instance-method" class="signature"><strong>#isset</strong>(var)</a>
+        
+          <div class="summary"><p>Determine if a variable is declared and is different than NULL</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#json_decode(data,as_array=false)-instance-method" class="signature"><strong>#json_decode</strong>(data, as_array = <span class="n">false</span>)</a>
+        
+          <div class="summary"><p>Decodes a JSON string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#json_encode(obj)-instance-method" class="signature"><strong>#json_encode</strong>(obj)</a>
+        
+          <div class="summary"><p>Returns the JSON representation of a value</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ksort(hash)-instance-method" class="signature"><strong>#ksort</strong>(hash)</a>
+        
+          <div class="summary"><p>Sort an array by key</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#long2ip(long)-instance-method" class="signature"><strong>#long2ip</strong>(long)</a>
+        
+          <div class="summary"><p>Converts an long integer address into a string in (IPv4) Internet standard dotted format</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#md5(string)-instance-method" class="signature"><strong>#md5</strong>(string)</a>
+        
+          <div class="summary"><p>Calculate the md5 hash of a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#method_exists(obj,method_name)-instance-method" class="signature"><strong>#method_exists</strong>(obj, method_name)</a>
+        
+          <div class="summary"><p>Checks if the class method exists</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#microtime(get_as_float=false)-instance-method" class="signature"><strong>#microtime</strong>(get_as_float = <span class="n">false</span>)</a>
+        
+          <div class="summary"><p>Return current Unix timestamp with microseconds</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mkdir(path,mode=511)-instance-method" class="signature"><strong>#mkdir</strong>(path, mode = <span class="n">511</span>)</a>
+        
+          <div class="summary"><p>Makes directory</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#mktime(hour=nil,min=nil,sec=nil,date=nil,month=nil,year=nil,is_dst=-1)-instance-method" class="signature"><strong>#mktime</strong>(hour = <span class="n">nil</span>, min = <span class="n">nil</span>, sec = <span class="n">nil</span>, date = <span class="n">nil</span>, month = <span class="n">nil</span>, year = <span class="n">nil</span>, is_dst = <span class="n">-1</span>)</a>
+        
+          <div class="summary"><p>Get Unix timestamp for a date</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#move_uploaded_file(tmp_path,new_path)-instance-method" class="signature"><strong>#move_uploaded_file</strong>(tmp_path, new_path)</a>
+        
+          <div class="summary"><p>Moves an uploaded file to a new location</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#nl2br(string)-instance-method" class="signature"><strong>#nl2br</strong>(string)</a>
+        
+          <div class="summary"><p>Inserts HTML line breaks before all newlines in a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#number_format(number,precision=2,seperator=&quot;.&quot;,delimiter=&quot;,&quot;)-instance-method" class="signature"><strong>#number_format</strong>(number, precision = <span class="n">2</span>, seperator = <span class="s">&quot;.&quot;</span>, delimiter = <span class="s">&quot;,&quot;</span>)</a>
+        
+          <div class="summary"><p>Format a number with grouped thousands</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#opendir(dirpath)-instance-method" class="signature"><strong>#opendir</strong>(dirpath)</a>
+        
+          <div class="summary"><p>Open directory handle</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#parse_str(str,hash)-instance-method" class="signature"><strong>#parse_str</strong>(str, hash)</a>
+        
+          <div class="summary"><p>Parses the string into variables</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#passthru(cmd)-instance-method" class="signature"><strong>#passthru</strong>(cmd)</a>
+        
+          <div class="summary"><p>Execute an external program and display raw output</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#pathinfo(filepath)-instance-method" class="signature"><strong>#pathinfo</strong>(filepath)</a>
+        
+          <div class="summary"><p>Returns information about a file path</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#print_r(argument,ret=false,count=1)-instance-method" class="signature"><strong>#print_r</strong>(argument, ret = <span class="n">false</span>, count = <span class="n">1</span>)</a>
+        
+          <div class="summary"><p>Prints human-readable information about a variable</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#readdir(dir_handle)-instance-method" class="signature"><strong>#readdir</strong>(dir_handle)</a>
+        
+          <div class="summary"><p>Read entry from directory handle</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#realpath(path)-instance-method" class="signature"><strong>#realpath</strong>(path)</a>
+        
+          <div class="summary"><p>Returns canonicalized absolute pathname</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#require_once(filename)-instance-method" class="signature"><strong>#require_once</strong>(filename)</a>
+        
+          <div class="summary"></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#serialize(argument)-instance-method" class="signature"><strong>#serialize</strong>(argument)</a>
+        
+          <div class="summary"><p>Generates a storable representation of a value</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#session_start-instance-method" class="signature"><strong>#session_start</strong></a>
+        
+          <div class="summary"><p>Start new or resume existing session</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#setcookie(cname,cvalue,expire=nil,domain=nil)-instance-method" class="signature"><strong>#setcookie</strong>(cname, cvalue, expire = <span class="n">nil</span>, domain = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Send a cookie</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#strip_tags(htmlstr)-instance-method" class="signature"><strong>#strip_tags</strong>(htmlstr)</a>
+        
+          <div class="summary"><p>Strip HTML and PHP tags from a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#strpos(haystack,needle)-instance-method" class="signature"><strong>#strpos</strong>(haystack, needle)</a>
+        
+          <div class="summary"><p>Find the position of the first occurrence of a substring in a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#strtolower(str)-instance-method" class="signature"><strong>#strtolower</strong>(str)</a>
+        
+          <div class="summary"><p>Make a string lowercase</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#strtotime(date_string,cur=nil)-instance-method" class="signature"><strong>#strtotime</strong>(date_string, cur = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Parse about any English textual datetime description into a Unix timestamp</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#strtoupper(str)-instance-method" class="signature"><strong>#strtoupper</strong>(str)</a>
+        
+          <div class="summary"><p>Make a string uppercase</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#strtr(str,replace_pairs)-instance-method" class="signature"><strong>#strtr</strong>(str, replace_pairs)</a>
+        
+          <div class="summary"><p>Translate characters or replace substrings</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#substr(string,from,to=nil)-instance-method" class="signature"><strong>#substr</strong>(string, from, to = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>Return part of a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#time-instance-method" class="signature"><strong>#time</strong></a>
+        
+          <div class="summary"><p>Return current Unix timestamp</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#trim(argument)-instance-method" class="signature"><strong>#trim</strong>(argument)</a>
+        
+          <div class="summary"><p>Strip whitespace (or other characters) from the beginning and end of a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#ucwords(string)-instance-method" class="signature"><strong>#ucwords</strong>(string)</a>
+        
+          <div class="summary"><p>Uppercase the first character of each word in a string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#unlink(filepath)-instance-method" class="signature"><strong>#unlink</strong>(filepath)</a>
+        
+          <div class="summary"><p>Deletes a file</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#unserialize(argument)-instance-method" class="signature"><strong>#unserialize</strong>(argument)</a>
+        
+          <div class="summary"><p>Creates a PHP value from a stored representation</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#urldecode(string)-instance-method" class="signature"><strong>#urldecode</strong>(string)</a>
+        
+          <div class="summary"><p>Decodes URL-encoded string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#urlencode(string)-instance-method" class="signature"><strong>#urlencode</strong>(string)</a>
+        
+          <div class="summary"><p>URL-encodes string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#utf8_decode(string)-instance-method" class="signature"><strong>#utf8_decode</strong>(string)</a>
+        
+          <div class="summary"><p>Converts a string with ISO-8859-1 characters encoded with UTF-8 to single-byte ISO-8859-1</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#utf8_encode(string)-instance-method" class="signature"><strong>#utf8_encode</strong>(string)</a>
+        
+          <div class="summary"><p>Encodes an ISO-8859-1 string to UTF-8</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L11" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="array(*ele)-instance-method">
+      <div class="signature">
+        
+        def <strong>array</strong>(*ele)
+
+        <a class="method-permalink" href="#array(*ele)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Create an array</p>
+
+<pre><code>php.array(<span class="s">&quot;&quot;</span>)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L21" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="array_key_exists(key,arr)-instance-method">
+      <div class="signature">
+        
+        def <strong>array_key_exists</strong>(key, arr)
+
+        <a class="method-permalink" href="#array_key_exists(key,arr)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Checks if the given key or index exists in the array</p>
+
+<pre><code>php.array_key_exists(key, arr)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="base64_decode(str)-instance-method">
+      <div class="signature">
+        
+        def <strong>base64_decode</strong>(str)
+
+        <a class="method-permalink" href="#base64_decode(str)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Decodes data encoded with MIME base64</p>
+
+<pre><code>php.base64_decode(str)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L41" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="base64_encode(str)-instance-method">
+      <div class="signature">
+        
+        def <strong>base64_encode</strong>(str)
+
+        <a class="method-permalink" href="#base64_encode(str)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Encodes data with MIME base64</p>
+
+<pre><code>php.base64_encode(str)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L52" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="basename(path)-instance-method">
+      <div class="signature">
+        
+        def <strong>basename</strong>(path)
+
+        <a class="method-permalink" href="#basename(path)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns trailing name component of path</p>
+
+<pre><code>php.basename(path)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L63" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="call_user_func-instance-method">
+      <div class="signature">
+        
+        def <strong>call_user_func</strong>
+
+        <a class="method-permalink" href="#call_user_func-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Call the callback given by the first parameter</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L73" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="chdir(directory)-instance-method">
+      <div class="signature">
+        
+        def <strong>chdir</strong>(directory)
+
+        <a class="method-permalink" href="#chdir(directory)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Change directory</p>
+
+<pre><code>php.chdir(directory)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L83" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="class_exists(class_name)-instance-method">
+      <div class="signature">
+        
+        def <strong>class_exists</strong>(class_name)
+
+        <a class="method-permalink" href="#class_exists(class_name)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Checks if the class has been defined</p>
+
+<pre><code>php.class_exists(<span class="s">&quot;some_class&quot;</span>)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L104" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="count(array)-instance-method">
+      <div class="signature">
+        
+        def <strong>count</strong>(array)
+
+        <a class="method-permalink" href="#count(array)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Count all elements in an array, or something in an object</p>
+
+<pre><code>php.count(some_array)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L114" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="date(date_format,date_input=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>date</strong>(date_format, date_input = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#date(date_format,date_input=nil)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Format a local time/date</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L125" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="die(die)-instance-method">
+      <div class="signature">
+        
+        def <strong>die</strong>(die)
+
+        <a class="method-permalink" href="#die(die)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Equivalent to exit</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L135" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dirname(filename)-instance-method">
+      <div class="signature">
+        
+        def <strong>dirname</strong>(filename)
+
+        <a class="method-permalink" href="#dirname(filename)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns a parent directory's path
+see https://crystal-lang.org/api/0.33.0/File.html#dirname(path):String-class-method</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L145" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="echo(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>echo</strong>(string)
+
+        <a class="method-permalink" href="#echo(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Output one or more strings</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L156" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="empty(obj)-instance-method">
+      <div class="signature">
+        
+        def <strong>empty</strong>(obj)
+
+        <a class="method-permalink" href="#empty(obj)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Determine whether a variable is empty</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L167" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="explode(expl,strexp)-instance-method">
+      <div class="signature">
+        
+        def <strong>explode</strong>(expl, strexp)
+
+        <a class="method-permalink" href="#explode(expl,strexp)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Split a string by a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L177" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fclose(handle)-instance-method">
+      <div class="signature">
+        
+        def <strong>fclose</strong>(handle)
+
+        <a class="method-permalink" href="#fclose(handle)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Closes an open file pointer</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L187" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fgets(handle,length=4096)-instance-method">
+      <div class="signature">
+        
+        def <strong>fgets</strong>(handle, length = <span class="n">4096</span>)
+
+        <a class="method-permalink" href="#fgets(handle,length=4096)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Gets line from file pointer</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L198" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="file_exists(filename)-instance-method">
+      <div class="signature">
+        
+        def <strong>file_exists</strong>(filename)
+
+        <a class="method-permalink" href="#file_exists(filename)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Checks whether a file or directory exists</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L208" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="file_get_contents(filename)-instance-method">
+      <div class="signature">
+        
+        def <strong>file_get_contents</strong>(filename)
+
+        <a class="method-permalink" href="#file_get_contents(filename)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Reads entire file into a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L218" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="file_put_contents(filename,context)-instance-method">
+      <div class="signature">
+        
+        def <strong>file_put_contents</strong>(filename, context)
+
+        <a class="method-permalink" href="#file_put_contents(filename,context)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Write data to a file</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L228" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fopen(filename,mode)-instance-method">
+      <div class="signature">
+        
+        def <strong>fopen</strong>(filename, mode)
+
+        <a class="method-permalink" href="#fopen(filename,mode)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Opens file or URL</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L238" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fread(handle,encoding=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>fread</strong>(handle, encoding = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#fread(handle,encoding=nil)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Binary-safe file read</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L249" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="fwrite(filename,content)-instance-method">
+      <div class="signature">
+        
+        def <strong>fwrite</strong>(filename, content)
+
+        <a class="method-permalink" href="#fwrite(filename,content)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Binary-safe file write</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L260" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gettext(message)-instance-method">
+      <div class="signature">
+        
+        def <strong>gettext</strong>(message)
+
+        <a class="method-permalink" href="#gettext(message)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Lookup a message in the current domain</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L270" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gzcompress(data,level=3)-instance-method">
+      <div class="signature">
+        
+        def <strong>gzcompress</strong>(data, level = <span class="n">3</span>)
+
+        <a class="method-permalink" href="#gzcompress(data,level=3)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Compress a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L280" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="gzuncompress(data,length=0)-instance-method">
+      <div class="signature">
+        
+        def <strong>gzuncompress</strong>(data, length = <span class="n">0</span>)
+
+        <a class="method-permalink" href="#gzuncompress(data,length=0)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Uncompress a compressed string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L290" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="header(header)-instance-method">
+      <div class="signature">
+        
+        def <strong>header</strong>(header)
+
+        <a class="method-permalink" href="#header(header)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Send a raw HTTP header</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L300" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="html_entity_decode(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>html_entity_decode</strong>(string)
+
+        <a class="method-permalink" href="#html_entity_decode(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Convert HTML entities to their corresponding characters</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L310" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="htmlspecialchars(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>htmlspecialchars</strong>(string)
+
+        <a class="method-permalink" href="#htmlspecialchars(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Convert special characters to HTML entities</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L320" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="http_build_query(obj)-instance-method">
+      <div class="signature">
+        
+        def <strong>http_build_query</strong>(obj)
+
+        <a class="method-permalink" href="#http_build_query(obj)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Generate URL-encoded query string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L330" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="include_once(filename)-instance-method">
+      <div class="signature">
+        
+        def <strong>include_once</strong>(filename)
+
+        <a class="method-permalink" href="#include_once(filename)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <pre><code>php.()</code></pre>
+
+
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L340" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ip2long(ip_address)-instance-method">
+      <div class="signature">
+        
+        def <strong>ip2long</strong>(ip_address)
+
+        <a class="method-permalink" href="#ip2long(ip_address)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Converts a string containing an (IPv4) Internet Protocol dotted address into a long integer</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L351" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_a(obj,classname)-instance-method">
+      <div class="signature">
+        
+        def <strong>is_a</strong>(obj, classname)
+
+        <a class="method-permalink" href="#is_a(obj,classname)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Checks if the object is of this class or has this class as one of its parents</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L361" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_dir(filepath)-instance-method">
+      <div class="signature">
+        
+        def <strong>is_dir</strong>(filepath)
+
+        <a class="method-permalink" href="#is_dir(filepath)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>ells whether the filename is a directory</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L371" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_file(filepath)-instance-method">
+      <div class="signature">
+        
+        def <strong>is_file</strong>(filepath)
+
+        <a class="method-permalink" href="#is_file(filepath)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Tells whether the filename is a regular file</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L381" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_numeric(number)-instance-method">
+      <div class="signature">
+        
+        def <strong>is_numeric</strong>(number)
+
+        <a class="method-permalink" href="#is_numeric(number)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Finds whether a variable is a number or a numeric string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L391" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="isset(var)-instance-method">
+      <div class="signature">
+        
+        def <strong>isset</strong>(var)
+
+        <a class="method-permalink" href="#isset(var)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Determine if a variable is declared and is different than NULL</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L401" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="json_decode(data,as_array=false)-instance-method">
+      <div class="signature">
+        
+        def <strong>json_decode</strong>(data, as_array = <span class="n">false</span>)
+
+        <a class="method-permalink" href="#json_decode(data,as_array=false)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Decodes a JSON string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L411" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="json_encode(obj)-instance-method">
+      <div class="signature">
+        
+        def <strong>json_encode</strong>(obj)
+
+        <a class="method-permalink" href="#json_encode(obj)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns the JSON representation of a value</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L421" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ksort(hash)-instance-method">
+      <div class="signature">
+        
+        def <strong>ksort</strong>(hash)
+
+        <a class="method-permalink" href="#ksort(hash)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Sort an array by key</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L431" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="long2ip(long)-instance-method">
+      <div class="signature">
+        
+        def <strong>long2ip</strong>(long)
+
+        <a class="method-permalink" href="#long2ip(long)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Converts an long integer address into a string in (IPv4) Internet standard dotted format</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L441" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="md5(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>md5</strong>(string)
+
+        <a class="method-permalink" href="#md5(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Calculate the md5 hash of a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L451" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="method_exists(obj,method_name)-instance-method">
+      <div class="signature">
+        
+        def <strong>method_exists</strong>(obj, method_name)
+
+        <a class="method-permalink" href="#method_exists(obj,method_name)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Checks if the class method exists</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L461" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="microtime(get_as_float=false)-instance-method">
+      <div class="signature">
+        
+        def <strong>microtime</strong>(get_as_float = <span class="n">false</span>)
+
+        <a class="method-permalink" href="#microtime(get_as_float=false)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return current Unix timestamp with microseconds</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L471" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mkdir(path,mode=511)-instance-method">
+      <div class="signature">
+        
+        def <strong>mkdir</strong>(path, mode = <span class="n">511</span>)
+
+        <a class="method-permalink" href="#mkdir(path,mode=511)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Makes directory</p>
+
+<pre><code>php.mkdir(<span class="s">&quot;/to/mode&quot;</span>, <span class="n">755</span>)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L93" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="mktime(hour=nil,min=nil,sec=nil,date=nil,month=nil,year=nil,is_dst=-1)-instance-method">
+      <div class="signature">
+        
+        def <strong>mktime</strong>(hour = <span class="n">nil</span>, min = <span class="n">nil</span>, sec = <span class="n">nil</span>, date = <span class="n">nil</span>, month = <span class="n">nil</span>, year = <span class="n">nil</span>, is_dst = <span class="n">-1</span>)
+
+        <a class="method-permalink" href="#mktime(hour=nil,min=nil,sec=nil,date=nil,month=nil,year=nil,is_dst=-1)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Get Unix timestamp for a date</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L481" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="move_uploaded_file(tmp_path,new_path)-instance-method">
+      <div class="signature">
+        
+        def <strong>move_uploaded_file</strong>(tmp_path, new_path)
+
+        <a class="method-permalink" href="#move_uploaded_file(tmp_path,new_path)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Moves an uploaded file to a new location</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L491" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="nl2br(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>nl2br</strong>(string)
+
+        <a class="method-permalink" href="#nl2br(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Inserts HTML line breaks before all newlines in a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L501" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="number_format(number,precision=2,seperator=&amp;quot;.&amp;quot;,delimiter=&amp;quot;,&amp;quot;)-instance-method">
+      <div class="signature">
+        
+        def <strong>number_format</strong>(number, precision = <span class="n">2</span>, seperator = <span class="s">&quot;.&quot;</span>, delimiter = <span class="s">&quot;,&quot;</span>)
+
+        <a class="method-permalink" href="#number_format(number,precision=2,seperator=&quot;.&quot;,delimiter=&quot;,&quot;)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Format a number with grouped thousands</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L511" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="opendir(dirpath)-instance-method">
+      <div class="signature">
+        
+        def <strong>opendir</strong>(dirpath)
+
+        <a class="method-permalink" href="#opendir(dirpath)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Open directory handle</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L521" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="parse_str(str,hash)-instance-method">
+      <div class="signature">
+        
+        def <strong>parse_str</strong>(str, hash)
+
+        <a class="method-permalink" href="#parse_str(str,hash)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Parses the string into variables</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L531" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="passthru(cmd)-instance-method">
+      <div class="signature">
+        
+        def <strong>passthru</strong>(cmd)
+
+        <a class="method-permalink" href="#passthru(cmd)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Execute an external program and display raw output</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L541" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="pathinfo(filepath)-instance-method">
+      <div class="signature">
+        
+        def <strong>pathinfo</strong>(filepath)
+
+        <a class="method-permalink" href="#pathinfo(filepath)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns information about a file path</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L551" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="print_r(argument,ret=false,count=1)-instance-method">
+      <div class="signature">
+        
+        def <strong>print_r</strong>(argument, ret = <span class="n">false</span>, count = <span class="n">1</span>)
+
+        <a class="method-permalink" href="#print_r(argument,ret=false,count=1)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Prints human-readable information about a variable</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L561" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="readdir(dir_handle)-instance-method">
+      <div class="signature">
+        
+        def <strong>readdir</strong>(dir_handle)
+
+        <a class="method-permalink" href="#readdir(dir_handle)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Read entry from directory handle</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L571" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="realpath(path)-instance-method">
+      <div class="signature">
+        
+        def <strong>realpath</strong>(path)
+
+        <a class="method-permalink" href="#realpath(path)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Returns canonicalized absolute pathname</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L581" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="require_once(filename)-instance-method">
+      <div class="signature">
+        
+        def <strong>require_once</strong>(filename)
+
+        <a class="method-permalink" href="#require_once(filename)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <pre><code>php.()</code></pre>
+
+
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L591" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="serialize(argument)-instance-method">
+      <div class="signature">
+        
+        def <strong>serialize</strong>(argument)
+
+        <a class="method-permalink" href="#serialize(argument)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Generates a storable representation of a value</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L601" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="session_start-instance-method">
+      <div class="signature">
+        
+        def <strong>session_start</strong>
+
+        <a class="method-permalink" href="#session_start-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Start new or resume existing session</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L611" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="setcookie(cname,cvalue,expire=nil,domain=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>setcookie</strong>(cname, cvalue, expire = <span class="n">nil</span>, domain = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#setcookie(cname,cvalue,expire=nil,domain=nil)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Send a cookie</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L621" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="strip_tags(htmlstr)-instance-method">
+      <div class="signature">
+        
+        def <strong>strip_tags</strong>(htmlstr)
+
+        <a class="method-permalink" href="#strip_tags(htmlstr)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Strip HTML and PHP tags from a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L631" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="strpos(haystack,needle)-instance-method">
+      <div class="signature">
+        
+        def <strong>strpos</strong>(haystack, needle)
+
+        <a class="method-permalink" href="#strpos(haystack,needle)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Find the position of the first occurrence of a substring in a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L641" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="strtolower(str)-instance-method">
+      <div class="signature">
+        
+        def <strong>strtolower</strong>(str)
+
+        <a class="method-permalink" href="#strtolower(str)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Make a string lowercase</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L651" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="strtotime(date_string,cur=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>strtotime</strong>(date_string, cur = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#strtotime(date_string,cur=nil)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Parse about any English textual datetime description into a Unix timestamp</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L661" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="strtoupper(str)-instance-method">
+      <div class="signature">
+        
+        def <strong>strtoupper</strong>(str)
+
+        <a class="method-permalink" href="#strtoupper(str)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Make a string uppercase</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L671" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="strtr(str,replace_pairs)-instance-method">
+      <div class="signature">
+        
+        def <strong>strtr</strong>(str, replace_pairs)
+
+        <a class="method-permalink" href="#strtr(str,replace_pairs)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Translate characters or replace substrings</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L681" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="substr(string,from,to=nil)-instance-method">
+      <div class="signature">
+        
+        def <strong>substr</strong>(string, from, to = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#substr(string,from,to=nil)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return part of a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L691" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="time-instance-method">
+      <div class="signature">
+        
+        def <strong>time</strong>
+
+        <a class="method-permalink" href="#time-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Return current Unix timestamp</p>
+
+<pre><code>php.time</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L701" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="trim(argument)-instance-method">
+      <div class="signature">
+        
+        def <strong>trim</strong>(argument)
+
+        <a class="method-permalink" href="#trim(argument)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Strip whitespace (or other characters) from the beginning and end of a string</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L711" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="ucwords(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>ucwords</strong>(string)
+
+        <a class="method-permalink" href="#ucwords(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Uppercase the first character of each word in a string</p>
+
+<pre><code>php.ucwords(string)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L722" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="unlink(filepath)-instance-method">
+      <div class="signature">
+        
+        def <strong>unlink</strong>(filepath)
+
+        <a class="method-permalink" href="#unlink(filepath)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Deletes a file</p>
+
+<pre><code>php.unlink(filepath)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L732" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="unserialize(argument)-instance-method">
+      <div class="signature">
+        
+        def <strong>unserialize</strong>(argument)
+
+        <a class="method-permalink" href="#unserialize(argument)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Creates a PHP value from a stored representation</p>
+
+<pre><code>php.()</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L742" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="urldecode(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>urldecode</strong>(string)
+
+        <a class="method-permalink" href="#urldecode(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Decodes URL-encoded string</p>
+
+<pre><code>php.urldecode(<span class="s">&quot;peter+%2B+paul&quot;</span>) <span class="c"># =&gt; &quot;peter+++paul&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L752" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="urlencode(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>urlencode</strong>(string)
+
+        <a class="method-permalink" href="#urlencode(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>URL-encodes string</p>
+
+<pre><code>php.urlencode(<span class="s">&quot;hello world!&quot;</span>) <span class="c"># =&gt; &quot;hello%20world!&quot;</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L763" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="utf8_decode(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>utf8_decode</strong>(string)
+
+        <a class="method-permalink" href="#utf8_decode(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Converts a string with ISO-8859-1 characters encoded with UTF-8 to single-byte ISO-8859-1</p>
+
+<pre><code>php.utf8_decode(string)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L774" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="utf8_encode(string)-instance-method">
+      <div class="signature">
+        
+        def <strong>utf8_encode</strong>(string)
+
+        <a class="method-permalink" href="#utf8_encode(string)-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Encodes an ISO-8859-1 string to UTF-8</p>
+
+<pre><code>php.utf8_encode(string)</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/benemohamed/phpcr/blob/e5adeb55c3a8bda8106571e957a845a48976f330/src/phpcr/phpcr.cr#L784" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
