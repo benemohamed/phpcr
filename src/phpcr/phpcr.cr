@@ -4,6 +4,8 @@ require "uri"
 require "openssl"
 require "file_utils"
 require "digest/md5"
+require "string_scanner"
+require "http/client"
 
 # @Author: Mohamed Ben rebia
 # @Date: 2020-04-25 16:08:55
@@ -38,7 +40,7 @@ module Phpcr
     #
     #
     # ```
-    # php.base64_decode("VGhpcyBpcyBhbiBlbmNvZGVkIHN0cmluZw==") # =>
+    # php.base64_decode("VGhpcyBpcyBhbiBlbmNvZGVkIHN0cmluZw==") # => This is an encoded string
     # ```
     #
     def base64_decode(str)
@@ -49,7 +51,7 @@ module Phpcr
     #
     #
     # ```
-    # php.base64_encode("This is an encoded string") # =>
+    # php.base64_encode("This is an encoded string") # => VGhpcyBpcyBhbiBlbmNvZGVkIHN0cmluZw==
     # ```
     #
     def base64_encode(str)
@@ -85,6 +87,7 @@ module Phpcr
     # ```
     #
     def chdir(directory)
+      return Dir.cd(directory)
     end
 
     # Makes directory
@@ -181,7 +184,7 @@ module Phpcr
     #
     #
     # ```
-    # php.() # =>
+    # php.explode(" ", "piece1 piece2 piece3 piece4 piece5 piece6")
     # ```
     #
     def explode(expl, strexp)
@@ -206,7 +209,8 @@ module Phpcr
     # php.() # =>
     # ```
     #
-    def fgets(handle, length = 4096)
+    def fgets(handle)
+      return File.read(handle)
     end
 
     # Checks whether a file or directory exists
@@ -533,6 +537,7 @@ module Phpcr
     # ```
     #
     def nl2br(string)
+      return string.gsub("\n", "<br />\n")
     end
 
     # Format a number with grouped thousands
@@ -624,6 +629,7 @@ module Phpcr
     #
     #
     def require_once(filename)
+      # require filename
     end
 
     # Generates a storable representation of a value
@@ -660,10 +666,16 @@ module Phpcr
     #
     #
     # ```
-    # php.() # =>
+    # php.strip_tags("<p>Test paragraph.</p><!-- Comment --> <a href="#fragment">Other text</a>") # => Test paragraph. Other text
+    # <p>Test paragraph.</p> <a href="#fragment">Other text</a>
     # ```
     #
     def strip_tags(htmlstr)
+      htmlstr.scan(/(<([\/A-z]+).*?>)/) do |match|
+        htmlstr = htmlstr.gsub(match[0], "")
+      end
+
+      return htmlstr.gsub("&nbsp;", " ")
     end
 
     # Find the position of the first occurrence of a substring in a string
@@ -758,6 +770,7 @@ module Phpcr
     # ```
     #
     def ucwords(string)
+      return string.split(" ").select { |str| w.capitalize }.join(" ")
     end
 
     # Deletes a file
